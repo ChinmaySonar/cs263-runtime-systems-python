@@ -1,3 +1,8 @@
+Info on Python GC: 
+    https://stackify.com/python-garbage-collection/
+    https://docs.python.org/3/library/gc.html
+    https://github.com/python/cpython/blob/e3ec44d692d9442e640cf5b2d8708157a65cec3e/Modules/gcmodule.c#L1169
+
 Distrubuted-Garbage-Collection-Survey: https://dl.acm.org/doi/10.1145/292469.292471
 
 
