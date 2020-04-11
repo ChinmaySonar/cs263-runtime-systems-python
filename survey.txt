@@ -6,3 +6,6 @@ Info on Python GC:
 Distrubuted-Garbage-Collection-Survey: https://dl.acm.org/doi/10.1145/292469.292471
 
 
+
+Security and Side Channel attacks in python:
+    https://speakerdeck.com/phildini/all-in-the-timing-side-channel-attacks-in-python
