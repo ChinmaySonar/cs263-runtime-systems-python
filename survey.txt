@@ -13,3 +13,10 @@ Info on Python profiling:
     https://stackify.com/how-to-use-python-profilers-learn-the-basics/
     https://docs.python.org/2/library/profile.html
     https://docs.python.org/3/library/debug.html
+
+
+Garbage Collections python vs pypy:
+    Python vs Pypy difference -- https://doc.pypy.org/en/latest/cpython_differences.html
+    Pypy garbage collector info -- https://doc.pypy.org/en/latest/gc_info.html
+    Comparison of python and pypy garbage collectors -- https://morepypy.blogspot.com/2013/10/incremental-garbage-collector-in-pypy.html
+    
