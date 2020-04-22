@@ -3,6 +3,8 @@ Info on Python GC:
     https://docs.python.org/3/library/gc.html
     https://github.com/python/cpython/blob/e3ec44d692d9442e640cf5b2d8708157a65cec3e/Modules/gcmodule.c#L1169
 
+    https://www.youtube.com/watch?v=CLW5Lyc1FN8
+
 Distrubuted-Garbage-Collection-Survey: https://dl.acm.org/doi/10.1145/292469.292471
 
 
@@ -20,3 +22,5 @@ Garbage Collections python vs pypy:
     Pypy garbage collector info -- https://doc.pypy.org/en/latest/gc_info.html
     Comparison of python and pypy garbage collectors -- https://morepypy.blogspot.com/2013/10/incremental-garbage-collector-in-pypy.html
     
+Possible Benchmark Programs:
+    https://github.com/CAS-Atlantic/python-gc-benchmark/tree/master/python_gc_benchmark/benchmarks
