@@ -24,3 +24,6 @@ Garbage Collections python vs pypy:
     
 Possible Benchmark Programs:
     https://github.com/CAS-Atlantic/python-gc-benchmark/tree/master/python_gc_benchmark/benchmarks
+    
+Interesting garbage collection issue in python:
+    https://stackoverflow.com/questions/3916553/python-garbage-collection-can-be-that-slow
