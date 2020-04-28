@@ -10,3 +10,10 @@
 * Experimented with **gc** module
 * Looked at possible benchmark programs to base our tests on
 * Read other articles about Python garbage collection (in survey.txt)
+
+## Week 5
+### Goals
+* Continue experimenting with **gc** module
+* Decide if or how we should analyze CPython garbage collector on its own
+* Start considering how to compare with PyPy garbage collector
+### Completed
