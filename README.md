@@ -17,3 +17,5 @@
 * Decide if or how we should analyze CPython garbage collector on its own
 * Start considering how to compare with PyPy garbage collector
 ### Completed
+* Experimented with gc performance with and without reference cycles (Python handles the two cases using different Garbage Collectors)
+* Explored functionalities in **gc** module
