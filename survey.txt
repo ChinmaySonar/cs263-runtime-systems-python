@@ -2,6 +2,7 @@ Info on Python GC:
     https://stackify.com/python-garbage-collection/
     https://docs.python.org/3/library/gc.html
     https://github.com/python/cpython/blob/e3ec44d692d9442e640cf5b2d8708157a65cec3e/Modules/gcmodule.c#L1169
+    https://rollout.io/blog/visualizing-garbage-collection-ruby-python/
 
     https://www.youtube.com/watch?v=CLW5Lyc1FN8
 
