@@ -28,3 +28,6 @@ Possible Benchmark Programs:
     
 Interesting garbage collection issue in python:
     https://stackoverflow.com/questions/3916553/python-garbage-collection-can-be-that-slow
+
+Another profiler
+    https://pypi.org/project/memory-profiler/

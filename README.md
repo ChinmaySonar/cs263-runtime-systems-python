@@ -19,3 +19,14 @@
 ### Completed
 * Experimented with gc performance with and without reference cycles (Python handles the two cases using different Garbage Collectors)
 * Explored functionalities in **gc** module
+
+## Week 6
+### Goals
+* Download and understand more about PyPy and its **gc**
+* Start profiling and comparing CPython and PyPy
+* Try [benchmarking programs](https://github.com/CAS-Atlantic/python-gc-benchmark/tree/master/)
+### Completed
+* Downloaded PyPy
+* Tried memory profiling using [mprof](https://pypi.org/project/memory-profiler/) and created some graphs
+* Failed to understand why the graphs are the way they are :'(
+
