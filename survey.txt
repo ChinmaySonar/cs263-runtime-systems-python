@@ -22,6 +22,7 @@ Garbage Collections python vs pypy:
     Python vs Pypy difference -- https://doc.pypy.org/en/latest/cpython_differences.html
     Pypy garbage collector info -- https://doc.pypy.org/en/latest/gc_info.html
     Comparison of python and pypy garbage collectors -- https://morepypy.blogspot.com/2013/10/incremental-garbage-collector-in-pypy.html
+    python garbage collection implementations CPython, pypy, GaS -- https://pdfs.semanticscholar.org/ed0a/1cdf9bb639084e80794b9e5a95fa616bb848.pdf
     
 Possible Benchmark Programs:
     https://github.com/CAS-Atlantic/python-gc-benchmark/tree/master/python_gc_benchmark/benchmarks
