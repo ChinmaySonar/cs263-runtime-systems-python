@@ -27,6 +27,14 @@
 * Try [benchmarking programs](https://github.com/CAS-Atlantic/python-gc-benchmark/tree/master/)
 ### Completed
 * Downloaded PyPy
+* Research some other papers that focus on PyPy garbage collector
+* Could not correcty set up mentioned benchmark thing
 * Tried memory profiling using [mprof](https://pypi.org/project/memory-profiler/) and created some graphs
-* Failed to understand why the graphs are the way they are :'(
-
+    * Failed to understand why the graphs are the way they are :'(
+    * Not that usefull because tracks memory returned to OS, but memory not always returned
+* Tried more memory profiling using [guppy](https://pypi.org/project/guppy3/)
+    * Doesn't seem too useful as does not track garbage
+* Tried tracking time spent in garbage collector for CPython and PyPy
+    * Only able to track time of one single collection using **gc** 
+    * Don't completely understand the memory info of PyPy [hook stats](https://doc.pypy.org/en/latest/gc_info.html#gc-hooks)
+    * PyPy does run faster on timeTest.py both as a whole and claimed time in garbage collector
