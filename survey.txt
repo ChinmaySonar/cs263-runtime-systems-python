@@ -16,6 +16,7 @@ Info on Python profiling:
     https://stackify.com/how-to-use-python-profilers-learn-the-basics/
     https://docs.python.org/2/library/profile.html
     https://docs.python.org/3/library/debug.html
+    A brief intro. to profiling in python: https://speakerdeck.com/rwarren/a-brief-intro-to-profiling-in-python?slide=11
 
 
 Garbage Collections python vs pypy:
