@@ -28,7 +28,7 @@ class MyHooks(object):
 
 if __name__=='__main__':
     imp = platform.python_implementation()
-    gc.disable()
+    # gc.disable()
 
     if imp == "PyPy":
         hooks = MyHooks()
@@ -36,7 +36,7 @@ if __name__=='__main__':
     elif imp == "CPython":
         gc.set_debug(gc.DEBUG_STATS)
 
-    for i in range(10000000):
+    for i in range(100000):
         a2 = A()
         a2 = None
     gc.collect()

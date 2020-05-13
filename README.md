@@ -38,3 +38,18 @@
     * Only able to track time of one single collection using **gc** 
     * Don't completely understand the memory info of PyPy [hook stats](https://doc.pypy.org/en/latest/gc_info.html#gc-hooks)
     * PyPy does run faster on timeTest.py both as a whole and claimed time in garbage collector
+
+## Week 7
+### Goals
+* Look for papers testing PyPy's garbage collector
+* Create tool to better log and visualize garbage collection times
+* Create programs to test limits of garbage collection
+### Completed
+* visualizer.py plots and records time in plot.png and output.txt
+    * Usage: `python3 visualizer.py <python implementation> <test file>`
+    * Currently only works when python implementation is python3
+    * Collects \<test file\> stderr output and matches portions that show generation and time of each collection
+    * \<test file\> must run `gc.set_debug(gc.DEBUG_STATS)` to capture required output
+    * Can test with `python3 visualizer.py python3 timeTest.py`
+
+
