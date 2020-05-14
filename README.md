@@ -47,9 +47,10 @@
 ### Completed
 * visualizer.py plots and records time in plot.png and output.txt
     * Usage: `python3 visualizer.py <python implementation> <test file>`
-    * Currently only works when python implementation is python3
     * Collects \<test file\> stderr output and matches portions that show generation and time of each collection
-    * \<test file\> must run `gc.set_debug(gc.DEBUG_STATS)` to capture required output
+    * For CPython, \<test file\> must run `gc.set_debug(gc.DEBUG_STATS)` to capture required output
+    * For PyPy, \<test file\> must set `gc.hook.on_gc_minor` to call `print ("0:", stats.duration, file=stderr)` and set `gc.hook.on_gc_collect_step` to call `print ("1:", stats.duration, file=stderr)`
     * Can test with `python3 visualizer.py python3 timeTest.py`
+    * Make plots look prettier
 
 

@@ -1,5 +1,6 @@
 import gc
 import platform
+from sys import stderr
 
 # python3 timeTest.py
 # pypy3 timeTest.py
@@ -14,21 +15,18 @@ class MyHooks(object):
     done = False
 
     def on_gc_minor(self, stats):
-        print ("minor duration:", stats.duration)
+        print ("0:", stats.duration, file=stderr)
 
     def on_gc_collect_step(self, stats):
+        print ("1:", stats.duration, file=stderr)
         pass
 
     def on_gc_collect(self, stats):
-        print("arenas_count_before:", stats.arenas_count_before, "\narenas_count_after:", stats.arenas_count_after)
-        print("arena_bytes:", stats.arenas_bytes)
-        print("rawmalloc_bytes_before:", stats.rawmalloc_bytes_before, "\nrawmalloc_bytes_after:", stats.rawmalloc_bytes_after)
         self.done = True
 
 
 if __name__=='__main__':
     imp = platform.python_implementation()
-    # gc.disable()
 
     if imp == "PyPy":
         hooks = MyHooks()
@@ -36,13 +34,17 @@ if __name__=='__main__':
     elif imp == "CPython":
         gc.set_debug(gc.DEBUG_STATS)
 
-    for i in range(100000):
-        a2 = A()
-        a2 = None
+    l1 = [A() for l in range(100000)]
+    for j in range(100000):
+        a = A()
+        a = None
+    l1 = None
+
     gc.collect()
     
     if imp == "PyPy":
-        print(gc.get_stats())
+        # print(gc.get_stats())
+        pass
     elif imp == "CPython":
         gc.set_debug(0)
     
