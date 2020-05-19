@@ -53,4 +53,7 @@
     * Can test with `python3 visualizer.py python3 timeTest.py`
     * Make plots look prettier
 
-
+## Week 8
+### Goals
+* Compare python and pypy collectors on different benchmarks. Note the qualitative difference.
+* Observe effect of nursery size and L2 (last level cache) of the system for pypy garbage collector.
