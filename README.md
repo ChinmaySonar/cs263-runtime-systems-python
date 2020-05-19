@@ -52,6 +52,9 @@
     * For PyPy, \<test file\> must set `gc.hook.on_gc_minor` to call `print ("0:", stats.duration, file=stderr)` and set `gc.hook.on_gc_collect_step` to call `print ("1:", stats.duration, file=stderr)`
     * Can test with `python3 visualizer.py python3 timeTest.py`
     * Make plots look prettier
+* Paper's comparing pypy vs Cpython garbage collectors:
+    * Quantitative overhead analysis for python -- https://ieeexplore.ieee.org/document/8573512
+    * python garbage collection implementations CPython, pypy, GaS -- https://pdfs.semanticscholar.org/ed0a/1cdf9bb639084e80794b9e5a95fa616bb848.pdf
 
 ## Week 8
 ### Goals
