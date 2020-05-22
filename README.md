@@ -50,7 +50,7 @@
     * Collects \<test file\> stderr output and matches portions that show generation and time of each collection
     * For CPython, \<test file\> must run `gc.set_debug(gc.DEBUG_STATS)` to capture required output
     * For PyPy, \<test file\> must set `gc.hook.on_gc_minor` to call `print ("0:", stats.duration, file=stderr)` and set `gc.hook.on_gc_collect_step` to call `print ("1:", stats.duration, file=stderr)`
-    * Can test with `python3 visualizer.py python3 timeTest.py`
+    * Can test with `python3 visualizer.py python3/pypy3 timeTest.py`
     * Make plots look prettier
 * Papers comparing pypy vs Cpython garbage collectors:
     * Quantitative overhead analysis for python -- https://ieeexplore.ieee.org/document/8573512
@@ -60,3 +60,7 @@
 ### Goals
 * Compare python and pypy collectors on different benchmarks. Note the qualitative difference.
 * Observe effect of nursery size and L2 (last level cache) of the system for pypy garbage collector.
+* Observe significant effects of changing threshold levels
+### Completed
+* Show that changing the threshold level of garbage collector by 1 can consistently result in large changes in time
+    * Plots show that changing threshold0 in CPython_Thresh_Testing/threshTest.py from 10000001 to 10000000 increases time spent in garbage collector by almost 1.5s 
