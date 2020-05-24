@@ -58,7 +58,7 @@
 
 ## Week 8
 ### Goals
-* Compare python and pypy collectors on different benchmarks. Note the qualitative difference.
+* Compare python and pypy garbage collectors on different benchmarks. Note the qualitative difference.
 * Observe effect of nursery size and L2 (last level cache) of the system for pypy garbage collector.
 * Observe significant effects of changing threshold levels
 ### Completed
@@ -66,3 +66,8 @@
     * Plots show that changing threshold0 in CPython_Thresh_Testing/threshTest.py from 10000001 to 10000000 increases time spent in garbage collector by almost 1.5s 
 * Couldn't obtain clean trends with Nursery size and last lavel cache -- Observed that the GC does attend a local minima in terms of total time required when Nursery size is roughly 0.5 * L2. Beyond these small values, time spent and frequency of GC decreases as Nursery size is increased.
 * Understood (theoretically) the incminimarc garbage collector in Pypy.
+
+## Week 9
+### Goals
+* Continue comparing python and pypy garbage collectors to understand exact favorable cases for each.
+* Further explore effect of Nursery size with respect to the cache size.
