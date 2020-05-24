@@ -5,10 +5,10 @@ We append the benchmarks to our framework to produce plots for time spent in eac
 overall time spent in garbage collection.
 
 
-** Pypy GC outperform in the following cases:
+## Pypy GC outperform in the following cases:
   * Simple reference cycles
   
-** Cpython GC outperform in the following cases:
+## Cpython GC outperform in the following cases:
   * n-queens.py (puzzle of placing n independent queens on a chessboard)
   
  
