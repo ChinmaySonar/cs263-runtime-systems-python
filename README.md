@@ -64,3 +64,5 @@
 ### Completed
 * Show that changing the threshold level of garbage collector by 1 can consistently result in large changes in time
     * Plots show that changing threshold0 in CPython_Thresh_Testing/threshTest.py from 10000001 to 10000000 increases time spent in garbage collector by almost 1.5s 
+* Couldn't obtain clean trends with Nursery size and last lavel cache -- Observed that the GC does attend a local minima in terms of total time required when Nursery size is roughly 0.5 * L2. Beyond these small values, time spent and frequency of GC decreases as Nursery size is increased.
+* Understood (theoretically) the incminimarc garbage collector in Pypy.
