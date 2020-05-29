@@ -19,7 +19,7 @@ if __name__=="__main__":
             mpatches.Patch(color="blue", label="gen2"),
             Line2D([0], [0], label="cumulative")]
     elif sys.argv[1] == "pypy3":
-        extracted = re.findall("(\d)(?:: )(.*)", result.stderr)
+        extracted = re.findall("(\d)(?:: )([\w\-\.]*)", result.stderr)
         legend = [mpatches.Patch(color="red", label="minor"), 
             mpatches.Patch(color="green", label="major-step"),
             Line2D([0], [0], label="cumulative")]
@@ -38,3 +38,4 @@ if __name__=="__main__":
         plt.legend(handles=legend)
         plt.plot(np.linspace(0, len(extracted)-1, len(extracted)), cumul)
         plt.savefig("plot.png")
+        print(cumul[-1])
