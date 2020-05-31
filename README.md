@@ -83,3 +83,9 @@
     * Nursery size appears to play a large part when many collections occur, as a smaller nursery size results in fewer cache misses and less time
     * However, once nursery size increases enough for significanly less collections to occur, time decreases dramatically
     * Also tested on a couple benchmark programs, but did not see a pattern explained by cache misses, likely because program was too short with insignificant number of collections
+* Compared about 15 benchmark programs on Cpython and Pypy
+
+## Week 10
+### Goals
+* Work on the final presentation
+* Work on the final report
