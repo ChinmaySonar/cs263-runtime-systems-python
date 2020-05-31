@@ -71,3 +71,15 @@
 ### Goals
 * Continue comparing python and pypy garbage collectors to understand exact favorable cases for each.
 * Further explore effect of Nursery size with respect to the cache size.
+
+###
+* Obtained cleaner trend for nursery size with longer custom test program with more collections
+    * Data in PyPy_Nursery folder in txt files
+        * First row: size of nursery for each column
+        * Next 16 rows: time for 16 trials
+        * Average
+        * Number of minor collections
+        * Number of major collection steps
+    * Nursery size appears to play a large part when many collections occur, as a smaller nursery size results in fewer cache misses and less time
+    * However, once nursery size increases enough for significanly less collections to occur, time decreases dramatically
+    * Also tested on a couple benchmark programs, but did not see a pattern explained by cache misses, likely because program was too short with insignificant number of collections
