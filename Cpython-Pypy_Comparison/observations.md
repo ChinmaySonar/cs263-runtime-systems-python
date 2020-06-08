@@ -1,4 +1,4 @@
-** Simple Cycle custom test program **
+## Simple Cycle custom test program
 
 We repeat the experiment for different loads (different array sizes) with default garbage collection settings for both
 Cpython, pypy, and observe:
