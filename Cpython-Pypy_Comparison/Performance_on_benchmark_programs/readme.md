@@ -51,6 +51,7 @@ Pyperformance suite has its own testing framework. To get around that, we remove
   * bechamrk-float
   * bechmark-deltablue
   * benchmark-hexiom
+  * benchmark-pickle
   * simple_reference_cycle
 ## Cpython GC outperform in the following cases:
   * benchamrk-n-queens (puzzle of placing n independent queens on a chessboard)
