@@ -41,6 +41,10 @@ Pyperformance suite has its own testing framework. To get around that, we remove
         elif imp == "CPython":
             gc.set_debug(0)
 
+## To run the benchmark program (after adding the code above):
+    python3.6 visualizer.py python3.6 benchmark-XYZ.py
+    python3.6 visualizer.py pypy3 benchmark-XYZ.py
+
 ### Summary of results:
 
 ## Pypy GC outperform in the following cases:
