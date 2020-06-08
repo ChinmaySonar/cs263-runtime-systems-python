@@ -1,3 +1,11 @@
+# Running Tests
+
+To run the visualization tool: `<python implementation X> visualizer.py <python implementation Y> <path to test file>`
+
+`<python implementation X>` is the Python implementation you would like to use, and should not affect the test. `<python implementation Y>` is the Python implementation you would like to test, either CPython or PyPy. Currently, it understands "python3" for CPython and "pypy3" for PyPy, but can be changed on lines 15 and 21. For CPython, the test file must run `gc.set_debug(gc.DEBUG_STATS)` to capture required output. For PyPy, the test file must set `gc.hook.on_gc_minor` to call `print ("0:", stats.duration, file=stderr)` and set `gc.hook.on_gc_collect_step` to call `print ("1:", stats.duration, file=stderr)`. threshTest.py in the CPython_Thresh_Testing folder provides an example, as well as benchmarks in Cpython-Pypy_Comparison, which should all be able to be visualized.
+
+More specific instructions on some tests are located within their respective folders. 
+
 # Project Journal
 
 ## Week 4
